@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+
+<body>
+  <form>
+    <div>
+      <label for="firstName"> First name </label>
+      <input type="text" id = "firstName" placeholder="First name"> 
+      </div>
+      
+    <div>
+      <label for="lastName"> Last name </label> 
+      <input type="text" id = "lastName" placeholder="Last name"> 
+    </div>
+    
+    <div>
+      <label for="email"> Email </label> 
+      <input type="text" id = "email" placeholder="Email" pattern="@"> 
+    </div>
+    
+    <div>
+      <label for="userName"> User name  </label> 
+      <input type="text" id = "userName" placeholder="User name"> 
+    </div>
+    
+    <div>
+      <label for="passworld"> Passworld10char(minimum) </label> <br>
+  
+      <input type="text" id = "passworld" placeholder="Passworld"> 
+    </div>
+    
+    <div>
+      <label for = "birthday"> Birthday </label> 
+      <input type="date" id = "birthday"> 
+    </div>
+    
+    <div>
+      <label for = "howHappy"> How Happy are you? </label> 
+      <input type="range" min = "0" max = "10" list = "tickmarks" id="howHappy"> 
+      <datalist id = "tickmarks">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+          <option value="5"></option>
+          <option value="6"></option>
+          <option value="7"></option>
+          <option value="8"></option>
+          <option value="9"></option>
+          <option value="10"></option>
+        </datalist>
+    </div>
+    
+    <div>
+      <label for = "favorite"> What is your favorite color? </label> 
+      <input type="color" value = "#e66465" id = "favorite"> 
+    </div>
+
+    <input type="submit" value = "Create Account">
+  </form>
+</body>
+</html>
