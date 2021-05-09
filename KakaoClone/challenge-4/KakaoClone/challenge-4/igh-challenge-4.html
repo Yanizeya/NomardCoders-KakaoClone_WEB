@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-widh"/>
+    <!--viewport란 모바일 최적화이다. device-width에 값이 들어갈 수도 있지만 device-width는 알아서 장치에 맞게 너비를 설정함.-->
+    <title>repl.it</title>
+  </head>
+  <body>
+    <form>
+    <div>
+        <label for="First-name">First name</label>
+       <input type="text" placeholder="First name" id="First-name" required/>
+    </div>
+    <div>
+      <label for="Last-name">Last name</label>
+      <input type="text" placeholder="Last name" id="Last-name" required/>
+    </div>
+    <div>
+      <label for="Email">Email</label>
+      <input type="email" placeholder="Email" id="Email" required/>
+    </div>
+    <div>
+      <label for="Username">User name</label>
+      <input type="text" placeholder="Username" id="Username" required/>
+    </div>
+    <div>
+      <label for="Password">Password(10 characters minimum)</label><br/>
+      <input type="password" placeholder="Password" id="Password" minlength="10" required/>
+    </div>
+    <div>
+      <label for="Birth-date">Birth date</label>
+      <input type="date" id="Birth-date" required/>
+    </div>
+    <div><!--required is not supported range-->
+      <label for="Range">How happy are you?</label>
+      <input type="range" id="Range" list="tickmarks" min="0" max="10"/>
+      <datalist id="tickmarks">
+        <option value="0"></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+        <option value="4"></option>
+        <option value="5"></option>
+        <option value="6"></option>
+        <option value="7"></option>
+        <option value="8"></option>
+        <option value="9"></option>
+        <option value="10"></option>
+      </datalist>
+    </div>
+    <div><!--required is not supported color-->
+      <label for="Color">What is your fav.color?</label>
+      <input type="color" id="Color"/>
+    </div>
+    <div>
+      <input type="submit" value="Create Account"/>
+    </div>
+    </form>
+  </body>
+</html>
