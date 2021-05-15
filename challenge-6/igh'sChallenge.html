@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            html {
+                background-color: #ff6347;
+            }
+            body {
+                display: flex;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+            #first {
+                display: flex;
+                height: 40vh;
+                width: 40vh;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                background-color: #f5deb3;
+                border: 0.5vh solid black;
+                padding: 0.1vh;
+            }
+            .white-border {
+                border: 0.5vh solid white;
+            }
+            
+            .rectangle {
+                height: 8vh;
+                width: 32vh;
+                border-style: dashed;
+            }
+            .square {
+                height: 8vh;
+                width: 8vh;
+            }
+            .green {
+                background-color: #008080;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="first">
+            <div class="square green white-border"></div>
+            <div class="rectangle green white-border"></div>
+            <div class="square green white-border"></div>
+        </div>
+    </body>
+</html>
