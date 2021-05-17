@@ -3,54 +3,74 @@
 <head>
     <style>
         body{
-            display:flex;
-            justify-content: center;
-            width : 100vw;
-            background-color: antiquewhite;
+          display: flex;
+          justify-content: center;
+          background-color: antiquewhite;
+        }
+        h1{
+          display : flex;
+          justify-content: center;
+          margin-bottom: 5%;
         }
         .main{
-            display: flex;
-            width : 50vw;
-            height : 50vh;
-            justify-content: space-between;
+          display : flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          width : 60vw;
+          height : 150vh;
         }
         .main--sub{
-            width : 45%;
-            height: 80%;
-            border : 5px solid white;
+          border : 10px solid white;
+          width : 45%;
+          height : 45%;
         }
-        .main--sub--inside{
-            background-color:white;
-            height : 30%;
-            text-align: center;
-            margin-top:10%;
+        .main--sub--sub{
+          background:  white;
         }
         .tomato{
-            background-color:#FF6347;
+          background: #FF6347;
         }
         .teal{
-            background-color: #008080;
+          background: #008080;
+        }
+        .burlywood{
+          background: #DEB887;
+        }
+        .thistle{
+          background: #D7BFD7;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <h1>The Best Colors</h1>
-        <div class = "main">
-            <div class = "main--sub tomato">
-                <div class = "main--sub--inside">
-                    <p>Tomato</p>
-                    <p>#FF6347</p>
-                </div>
+  <div>
+    <h1>The Best Colors</h1>
+    <div class = "main">
+        <div class = "main--sub tomato">
+            <div class = "main--sub--sub">
+                <p>Tomato</p>
+                <p>#FF6347</p>
             </div>
-            <div class = "main--sub teal">
-                <div class = "main--sub--inside">
-                    Teal
-                    #008080
-                </div>
+        </div>
+        <div class = "main--sub teal">
+            <div class = "main--sub--sub">
+                <p>Teal</p>
+                <p>#008080</p>
+            </div>
+        </div>
+        <div class = "main--sub burlywood">
+            <div class = "main--sub--sub">
+                <p>Burlywood</p>
+                <p>#DEB887</p>
+            </div>
+        </div>
+        <div class = "main--sub thistle">
+            <div class = "main--sub--sub">
+                <p>Thistle</p>
+                <p>#D7BFD7</p>
             </div>
         </div>
     </div>
+  </div>
 </body>
 </html>
